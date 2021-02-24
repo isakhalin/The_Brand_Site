@@ -1,0 +1,82 @@
+.header {
+    max-width: 1600px;
+    width: 100%;
+    background: #222222;
+    margin: 0 auto;
+   
+    &--wrp {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        background: red;
+        display: flex;
+    }
+    
+    &--logo {
+        display: flex;
+    }
+    
+    &--logo-link {
+
+    }
+    
+    &--logo-img {
+
+    }
+
+    &--search {
+
+    }
+
+    &--label {
+
+    }
+
+    &--label-svg {
+
+    }
+
+    &--checkbox {
+
+    }
+
+    &--menu {
+
+    }
+
+    &--menu-list {
+
+    }
+
+    &--menu-item {
+
+    }
+
+    &--menu-label {
+
+    }
+
+    &--menu-span {
+
+    }
+
+    &--menu-checkbox {
+
+    }
+
+    &--menu-item {
+
+    }
+
+    &--menu-svg-profile {
+
+    }
+
+    &--menu-item {
+
+    }
+
+    &--menu-svg-cart {
+    
+    }
+}

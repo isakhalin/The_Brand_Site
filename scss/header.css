@@ -1,0 +1,15 @@
+.header {
+  max-width: 1600px;
+  width: 100%;
+  background: #222222;
+  margin: 0 auto; }
+  .header--wrp {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    background: red;
+    display: flex; }
+  .header--logo {
+    display: flex; }
+
+/*# sourceMappingURL=header.css.map */
