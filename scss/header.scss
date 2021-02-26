@@ -4,7 +4,7 @@
     background: #222222;
     margin: 0 auto;
    
-    &--wrp {
+    &__wrp {
         max-width: 1140px;
         width: 100%;
         margin: 0 auto;
@@ -12,71 +12,76 @@
         display: flex;
     }
     
-    &--logo {
+    &__logo {
         display: flex;
     }
     
-    &--logo-link {
+    &__logo-link {
 
     }
     
-    &--logo-img {
+    &__logo-img {
+        border: 1px solid #fff;
+        height: 38px;
+    }
+
+    &__search {
 
     }
 
-    &--search {
+    &__label {
 
     }
 
-    &--label {
+    &__label-svg {
+        border: 1px solid #fff;
+        fill: #E8E8E8;
+    }
+
+    &__checkbox {
 
     }
 
-    &--label-svg {
+    &__menu {
 
     }
 
-    &--checkbox {
+    &__menu-list {
 
     }
 
-    &--menu {
+    &__menu-item {
 
     }
 
-    &--menu-list {
+    &__menu-label {
 
     }
 
-    &--menu-item {
+    &__menu-span {
 
     }
 
-    &--menu-label {
+    &__menu-checkbox {
 
     }
 
-    &--menu-span {
+    &__menu-item {
+        border: 1px solid #fff;
+        list-style: none;
+    }
+
+    &__menu-svg-profile {
+        border: 1px solid #fff;
+        fill:#E8E8E8;
+    }
+
+    &__menu-item {
 
     }
 
-    &--menu-checkbox {
-
-    }
-
-    &--menu-item {
-
-    }
-
-    &--menu-svg-profile {
-
-    }
-
-    &--menu-item {
-
-    }
-
-    &--menu-svg-cart {
-    
+    &__menu-svg-cart {
+        border: 1px solid #fff;
+     fill: #E8E8E8;
     }
 }

@@ -303,48 +303,4 @@ template {
 [hidden] {
   display: none; }
 
-@font-face {
-  font-family: 'lato';
-  src: url("../fonts/") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
-  font-family: 'lato';
-  src: url("../fonts/lato-light.woff2") format("woff2"), url("../fonts/lato-light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'lato';
-  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-.header {
-  max-width: 1600px;
-  width: 100%;
-  background: #222222;
-  margin: 0 auto; }
-  .header__wrp {
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-    background: red;
-    display: flex; }
-  .header__logo {
-    display: flex; }
-  .header__logo-img {
-    border: 1px solid #fff;
-    height: 38px; }
-  .header__label-svg {
-    border: 1px solid #fff;
-    fill: #E8E8E8; }
-  .header__menu-item {
-    border: 1px solid #fff;
-    list-style: none; }
-  .header__menu-svg-profile {
-    border: 1px solid #fff;
-    fill: #E8E8E8; }
-  .header__menu-svg-cart {
-    border: 1px solid #fff;
-    fill: #E8E8E8; }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=normalize.css.map */
