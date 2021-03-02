@@ -1,0 +1,12 @@
+@mixin fonts ($weight, $size, $lineh) {
+    font-family: lato;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineh;
+    }
+
+@mixin hover () {
+    color:#F16D7F;
+    fill: #F16D7F;
+   }

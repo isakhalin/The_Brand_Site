@@ -42,14 +42,20 @@
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     line-height: 0;
-    align-items: flex-end; }
-  .header__menu-item {
-    margin: 0 0 0 30px;
+    align-items: flex-end;
     list-style: none; }
-  .header__menu-label {
+  .header__menu-first-item {
     display: flex;
     width: 32px;
     height: 26px; }
+  .header__menu-item {
+    margin: 0 0 0 30px; }
+  .header__menu-label {
+    position: absolute;
+    display: flex;
+    width: 32px;
+    height: 26px;
+    cursor: pointer; }
   .header__menu-span {
     display: block;
     width: 32px;
@@ -86,23 +92,47 @@
       top: 0; }
     .header__menu-checkbox:checked ~ .header__menu-span {
       background: none; }
-  .header__header__second-menu-list {
-    border: 1px solid red;
+    .header__menu-checkbox:checked ~ .header__second-menu-list {
+      visibility: visible; }
+  .header__second-menu-list {
+    visibility: hidden;
+    font-family: lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 37px 68px 37px 39px;
     position: absolute;
-    /* display: flex; */
-    width: 100px;
-    height: 300px;
-    top: 180px;
-    line-height: 1;
-    padding: 0 0 0 0;
+    max-width: 232px;
+    top: 78px;
+    right: 0;
     margin: 0 0 0 0;
-    list-style-type: none; }
+    list-style-type: none;
+    color: #6F6E6E;
+    text-transform: capitalize;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); }
+  .header__second-menu-heading {
+    display: block;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase; }
   .header__second-menu-item {
+    margin: 20px 0 0 0;
     display: flex;
-    flex-direction: column;
-    color: black; }
+    flex-direction: column; }
+    .header__second-menu-item--margin {
+      margin: 24px 0 0 0; }
   .header__menu-svg-profile {
     fill: #E8E8E8; }
+  .header__second-menu-main-object {
+    color: #F16D7F;
+    text-transform: uppercase; }
+  .header__second-menu-object {
+    margin: 12px 0 0 20px; }
+    .header__second-menu-object:hover {
+      color: #F16D7F;
+      fill: #F16D7F; }
   .header__menu-svg-cart {
     fill: #E8E8E8; }
 
