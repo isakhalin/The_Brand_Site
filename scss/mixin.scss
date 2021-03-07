@@ -10,3 +10,9 @@
     color:#F16D7F;
     fill: #F16D7F;
    }
+
+@mixin bbx {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+}
