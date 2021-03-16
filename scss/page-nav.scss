@@ -1,0 +1,49 @@
+@import "mixin.scss";
+
+.page-nav {
+    margin: 0 auto;
+    max-width: 1600px;
+    background: #F8F3F4;
+
+    &__wrp {
+        display: flex;
+        max-width: 1140px;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        padding: 60px 0;
+    }
+
+    &__heading {
+        @include fonts (400, 24px, 29px);
+        text-transform: uppercase;
+        color: #F16D7F;
+    }
+
+    &__nav-list {
+        display: flex;
+        list-style: none;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        color: #636363;
+    }
+
+    &__nav-list-item {
+        @include fonts (300, 14px, 17px);
+        text-transform: uppercase;
+
+        &--separate {
+            margin: 0 0 0 0;
+
+            &:after {
+                content: "/";
+                margin: 0 5px 0 5px;
+            }
+        }
+
+        &--text-modify {
+            font-weight: 700;
+            color: #F16D7F;
+        }
+    }
+}

@@ -5,6 +5,7 @@
 @import "product.scss";
 @import "feature.scss";
 @import "footer.scss";
+@import "page-nav.scss";
 
 .index-main-heading {
     margin: 0 auto;
@@ -189,5 +190,54 @@
         background: #f74058;
         border: 1px solid #FF6A6A;
         color: #fff;
+    }
+}
+
+.catalog-filter {
+    @include fonts (400, 14px, 17px);
+    color: #6F6E6E;
+    max-width: 1600px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 50px 0 65px 0;
+
+    &-wrp {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &-menu {
+
+        &-text {
+            color: #000000;
+            font-weight: 600;
+        }
+    }
+
+    &-options {
+        list-style: none;
+        margin: 0 0 0 320px;
+        padding: 0 0 0 0;
+        display: flex;
+
+        &-item {
+            margin: 0 10px 0 30px;
+            
+            &-text {
+                display: flex;
+                align-items: center;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 5px;
+                    margin: 0 0 0 10px;
+                    background-image: url(../img/arrow-down.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
     }
 }

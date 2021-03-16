@@ -99,6 +99,15 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: #ec576b;
+        }
+
+        &:active {
+            background: #ec3850;
+        }
     }
 
     &__copyright {
