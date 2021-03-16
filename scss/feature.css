@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* ========== Начало блока feature [feature.scss] ========== */
+.feature {
+  max-width: 1600px;
+  width: 100%;
+  background: #222222;
+  margin: 0 auto;
+  font-family: lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FBFBFB; }
+  .feature__wrp {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-between; }
+  .feature__item {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 31px 0 31px;
+    color: #FBFBFB; }
+  .feature__item-svg {
+    fill: #F16D7F; }
+  .feature__heading {
+    margin: 28px 0 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px; }
+  .feature__text {
+    text-align: center;
+    margin: 16px 0 0 0; }
+
+/* ========== Конец блока feature [feature.scss] ========== */
+
+/*# sourceMappingURL=feature.css.map */

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* ========== Начало блока header [header.scss] ========== */
 .header {
   max-width: 1600px;
   width: 100%;
@@ -135,5 +137,7 @@
       fill: #F16D7F; }
   .header__menu-svg-cart {
     fill: #E8E8E8; }
+
+/* ========== Конец блока header [header.scss] ========== */
 
 /*# sourceMappingURL=header.css.map */

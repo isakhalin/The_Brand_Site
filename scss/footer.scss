@@ -1,0 +1,157 @@
+@import "mixin.scss";
+
+/* ========== Начало блока footer [footer.scss] ========== */
+
+.footer {
+    &__subscribe {
+        width: 100%;
+        margin: 0 auto;
+        background: url(../img/footer_backgrnd.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1600px;
+    }
+
+    &__shadow-box {
+        width: 100%;
+        height: 100%;
+        background: rgba(244, 244, 244, 0.7);
+    }
+
+    &__subscribe-wrp {
+        @include bbx;
+        max-width: 1140px;
+        padding: 97px 20px 153px 20px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__subscribe-quote {
+        @include fonts (400, 20px, 24px);
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // &__subscribe-img {
+
+    // }
+
+    &__quote-text {
+        text-align: center;
+        margin: 30px 0 0 0;
+    }
+
+    &__form {
+        @include fonts (700, 24px, 40px);
+        padding: 35px 0 0 0;
+        max-width: 356px;
+        width: 100%;
+        text-transform: uppercase;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // &__form-heading {
+
+    // }
+
+    &__form-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__form-wrp {
+        margin: 32px 0 0 0;
+        display: flex;
+        align-self: normal;
+        justify-content: center;
+    }
+
+    &__form-email {
+        @include bbx;
+        border: none;
+        height: 50px;
+        padding: 0 0 0 20px;
+        width: 100%;
+        max-width: 256px;
+        background: #E1E1E1;
+        border-radius: 30px 0 0 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__form-submit {
+        border: none;
+        height: 50px;
+        padding: 0 20px 0 20px;
+        color: #fff;
+        background: #F16D7F;
+        border-radius: 0 30px 30px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__copyright {
+        margin: 0 auto;
+        max-width: 1600px;
+        width: 100%;
+        background: #222;
+        color: #FBFBFB;
+    }
+
+    &__copyright-wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 24px 20px 24px 20px;
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &__copyright-text {
+        @include fonts (400, 16px, 19px);
+    }
+
+    &__social-box {
+        display: flex;
+    }
+
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 32px;
+        height: 32px;
+        margin: 0 0 0 7px;
+        background: #fff;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: #F16D7F;
+        }
+    }
+
+    &__social-item {
+        background: none;
+        color: #222;
+        transition: 00.3s ease;
+    }
+
+    &__social-link:hover &__social-item {
+        color: #FBFBFB;
+    }
+}
+
+/* ========== Конец блока footer [footer.scss] ========== */

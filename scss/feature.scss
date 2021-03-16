@@ -1,0 +1,50 @@
+@import "mixin.scss";
+
+/* ========== Начало блока feature [feature.scss] ========== */
+
+.feature {
+    max-width: 1600px;
+    width: 100%;
+    background: #222222;
+    margin: 0 auto;
+    @include fonts (300, 14px, 17px);
+    color: #FBFBFB;
+
+    &__wrp {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 100px 0 100px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @include bbx;
+        justify-content: flex-end;
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 31px 0 31px;
+        color: #FBFBFB;
+    }
+
+    &__item-svg {
+        fill: #F16D7F;
+    }
+
+    &__heading {
+        margin: 28px 0 0 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__text {
+        text-align: center;
+        margin: 16px 0 0 0;
+    }
+}
+
+/* ========== Конец блока feature [feature.scss] ========== */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -318,6 +319,7 @@ template {
   src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
+/* ========== Начало блока header [header.scss] ========== */
 .header {
   max-width: 1600px;
   width: 100%;
@@ -456,6 +458,224 @@ template {
   .header__menu-svg-cart {
     fill: #E8E8E8; }
 
+/* ========== Конец блока header [header.scss] ========== */
+/* ========== Начало блока product [product.scss] ========== */
+.product {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  box-sizing: border-box;
+  width: 360px;
+  background: #F8F8F8; }
+  .product__img-box {
+    display: flex;
+    position: relative; }
+  .product__product-img {
+    height: 420px; }
+  .product__product-img-shadow {
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .product__btn {
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer; }
+  .product__cart-svg {
+    margin: 0 10px 0 0;
+    fill: #fff; }
+  .product__description-wrp {
+    padding: 25px 30px 20px 16px; }
+  .product__heading {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000;
+    text-transform: uppercase; }
+  .product__price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F; }
+  .product:hover .product__product-img-shadow {
+    visibility: visible; }
+
+/* ========== Конец блока product [product.scss] ========== */
+/* ========== Начало блока feature [feature.scss] ========== */
+.feature {
+  max-width: 1600px;
+  width: 100%;
+  background: #222222;
+  margin: 0 auto;
+  font-family: lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FBFBFB; }
+  .feature__wrp {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-between; }
+  .feature__item {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 31px 0 31px;
+    color: #FBFBFB; }
+  .feature__item-svg {
+    fill: #F16D7F; }
+  .feature__heading {
+    margin: 28px 0 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px; }
+  .feature__text {
+    text-align: center;
+    margin: 16px 0 0 0; }
+
+/* ========== Конец блока feature [feature.scss] ========== */
+/* ========== Начало блока footer [footer.scss] ========== */
+.footer__subscribe {
+  width: 100%;
+  margin: 0 auto;
+  background: url(../img/footer_backgrnd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px; }
+.footer__shadow-box {
+  width: 100%;
+  height: 100%;
+  background: rgba(244, 244, 244, 0.7); }
+.footer__subscribe-wrp {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  box-sizing: border-box;
+  max-width: 1140px;
+  padding: 97px 20px 153px 20px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+.footer__subscribe-quote {
+  font-family: lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+.footer__quote-text {
+  text-align: center;
+  margin: 30px 0 0 0; }
+.footer__form {
+  font-family: lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  padding: 35px 0 0 0;
+  max-width: 356px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+.footer__form-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px; }
+.footer__form-wrp {
+  margin: 32px 0 0 0;
+  display: flex;
+  align-self: normal;
+  justify-content: center; }
+.footer__form-email {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  box-sizing: border-box;
+  border: none;
+  height: 50px;
+  padding: 0 0 0 20px;
+  width: 100%;
+  max-width: 256px;
+  background: #E1E1E1;
+  border-radius: 30px 0 0 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px; }
+.footer__form-submit {
+  border: none;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  color: #fff;
+  background: #F16D7F;
+  border-radius: 0 30px 30px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px; }
+.footer__copyright {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
+  background: #222;
+  color: #FBFBFB; }
+.footer__copyright-wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 24px 20px 24px 20px;
+  max-width: 1140px;
+  margin: 0 auto; }
+.footer__copyright-text {
+  font-family: lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px; }
+.footer__social-box {
+  display: flex; }
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  margin: 0 0 0 7px;
+  background: #fff;
+  transition: 0.3s ease; }
+  .footer__social-link:hover {
+    background: #F16D7F; }
+.footer__social-item {
+  background: none;
+  color: #222;
+  transition: 00.3s ease; }
+.footer__social-link:hover .footer__social-item {
+  color: #FBFBFB; }
+
+/* ========== Конец блока footer [footer.scss] ========== */
 .index-main-heading {
   margin: 0 auto;
   background: #F1E4E6;
@@ -555,5 +775,66 @@ template {
       font-size: 24px;
       line-height: 21px;
       color: #F16D7F; }
+
+.featured-items {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  box-sizing: border-box;
+  font-family: lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.featured-items-heading {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222; }
+
+.featured-items-text {
+  margin: 6px 0 0 0;
+  font-weight: 400;
+  color: #9F9F9F; }
+
+.product-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0; }
+
+.product--mgn {
+  margin: 0 0 30px 0; }
+
+.featured-items-button {
+  cursor: pointer;
+  margin: 0 0 90px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  background: transparent;
+  padding: 15px 40px 15px 40px;
+  border: 1px solid #FF6A6A;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+  outline: none; }
+  .featured-items-button:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    color: #fff; }
+  .featured-items-button:active {
+    background: #f74058;
+    border: 1px solid #FF6A6A;
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

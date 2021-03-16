@@ -1,0 +1,74 @@
+@import "mixin.scss";
+
+/* ========== Начало блока product [product.scss] ========== */
+
+.product {
+    @include bbx;
+    width: 360px;
+    background: #F8F8F8;
+
+    &__img-box {
+        display: flex;
+        position: relative;
+    }
+
+    &__product-img {
+        height: 420px;
+    }
+
+    &__product-img-shadow {
+        visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(58, 56, 56, 0.86);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn {
+        padding: 10px 15px;
+        background: transparent;
+        border: 1px solid #fff;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &__cart-svg {
+        margin: 0 10px 0 0;
+        fill: #fff;
+    }
+
+    &__description-wrp {
+        padding: 25px 30px 20px 16px;
+    }
+
+    &__heading {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    // &__text {
+
+    // }
+
+    &__price {
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 19px;
+       color: #F16D7F;
+    }
+
+    &:hover &__product-img-shadow {
+        visibility: visible;
+    }
+}
+
+/* ========== Конец блока product [product.scss] ========== */

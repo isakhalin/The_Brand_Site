@@ -1,5 +1,7 @@
 @import "mixin.scss";
 
+/* ========== Начало блока header [header.scss] ========== */
+
 .header {
     max-width: 1600px;
     width: 100%;
@@ -10,7 +12,6 @@
         max-width: 1140px;
         width: 100%;
         margin: 0 auto;
-        // background: red;
         display: flex;
         justify-content: space-between;
         padding: 20px 0 20px 0;
@@ -26,7 +27,6 @@
     }
     
     &__logo-img {
-        // border: 1px solid #fff;
         height: 38px;
     }
 
@@ -41,7 +41,6 @@
     }
 
     &__label-svg {
-        // border: 1px solid #fff;
         fill: #E8E8E8;
     }
 
@@ -61,9 +60,9 @@
         }
     }
 
-    &__menu {
+    // &__menu {
 
-    }
+    // }
 
     &__menu-list {
         display: flex;
@@ -76,7 +75,6 @@
 
 
     &__menu-first-item {
-        // list-style: none;
         display: flex;
         width: 32px;
         height: 26px;
@@ -84,12 +82,11 @@
 
     &__menu-item {
         margin: 0 0 0 30px;
-        // list-style: none;
     }
 
-    &__menu-link {
+    // &__menu-link {
         
-    }
+    // }
 
     &__menu-label {
         position: absolute;
@@ -192,7 +189,6 @@
     &__second-menu-main-object {
         color: #F16D7F;
         text-transform: uppercase;
-
     }
 
     &__second-menu-object {
@@ -203,13 +199,10 @@
         }
     }
 
-    
-    // &__menu-item {
-
-    // }
-
     &__menu-svg-cart {
         // border: 1px solid #fff;
         fill: #E8E8E8;
     }
 }
+
+/* ========== Конец блока header [header.scss] ========== */
