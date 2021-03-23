@@ -22,7 +22,6 @@
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     box-sizing: border-box;
-    justify-content: flex-end;
     max-width: 360px;
     display: flex;
     flex-direction: column;
@@ -30,6 +29,8 @@
     padding: 0 31px 0 31px;
     color: #FBFBFB; }
   .feature__item-svg {
+    display: block;
+    height: 40px;
     fill: #F16D7F; }
   .feature__heading {
     margin: 28px 0 0 0;

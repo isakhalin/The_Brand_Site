@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /* ========== Начало блока product [product.scss] ========== */
 .product {
+  font-family: lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   box-sizing: border-box;

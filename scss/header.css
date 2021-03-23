@@ -114,7 +114,8 @@
     color: #6F6E6E;
     text-transform: capitalize;
     background: #FFFFFF;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21); }
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1; }
   .header__second-menu-heading {
     display: block;
     font-weight: 700;

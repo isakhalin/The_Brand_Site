@@ -21,7 +21,6 @@
 
     &__item {
         @include bbx;
-        justify-content: flex-end;
         max-width: 360px;
         display: flex;
         flex-direction: column;
@@ -31,6 +30,8 @@
     }
 
     &__item-svg {
+        display: block;
+        height: 40px;
         fill: #F16D7F;
     }
 
