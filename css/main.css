@@ -1123,4 +1123,37 @@ template {
     background-image: url(../img/right-pg.svg);
     background-repeat: no-repeat; }
 
+/* ========== Конец стилей для страницы catalog ========== */
+/* ========== Начало стилей для страницы product ========== */
+.product-pg-carusel-wrp {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+.product-pg-carusel {
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: space-between; }
+  .product-pg-carusel-button-backward {
+    border: none;
+    padding: 0;
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center; }
+  .product-pg-carusel-product-img {
+    margin: 10px 0 40px 0; }
+  .product-pg-carusel-button-forward {
+    border: none;
+    padding: 0;
+    background-color: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center; }
+
 /*# sourceMappingURL=main.css.map */
