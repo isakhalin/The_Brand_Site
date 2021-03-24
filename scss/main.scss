@@ -6,6 +6,8 @@
 @import "feature.scss";
 @import "footer.scss";
 @import "page-nav.scss";
+@import "add-to-cart-btn.scss";
+@import "filter-options.scss";
 
 .index-main-heading {
     margin: 0 auto;
@@ -305,148 +307,6 @@
             color: #EF5B70;
         }
     }
-
-    &-checkbox-trending {
-        display: none;
-
-        &:checked ~.catalog-filter-trending-form {
-            display: flex;
-        }
-
-        &:checked ~.catalog-filter-label-trending::after {
-            transform: rotate(-180deg);
-        }
-    }
-
-    &-checkbox-size {
-        display: none;
-
-        &:checked ~.catalog-filter-size-form {
-            display: flex;
-        }
-
-        &:checked ~.catalog-filter-label-size::after {
-            transform: rotate(-180deg);
-        }
-    }
-
-    &-checkbox-price {
-        display: none;
-
-        &:checked ~.catalog-filter-price-form {
-            display: flex;
-        }
-
-        &:checked ~.catalog-filter-label-price::after {
-            transform: rotate(-180deg);
-        }
-    }
-
-    &-options-wrp {
-        padding: 0 0 0 0;
-        display: flex;
-        position: relative;
-    }
-
-    &-labels {
-        display: flex;
-        margin: 0 0 0 28px;
-        align-items: center;
-    }
-
-    &-label-trending {
-        
-        &::after {
-            content: "";
-            display: block;
-            width: 10px;
-            height: 5px;
-            margin: 0 0 0 10px;
-            background-image: url(../img/arrow-down.png);
-            background-repeat: no-repeat;
-            transition: 0.3s ease;
-        }
-    }
-
-    &-label-size {
-        
-        &::after {
-            content: "";
-            display: block;
-            width: 10px;
-            height: 5px;
-            margin: 0 0 0 10px;
-            background-image: url(../img/arrow-down.png);
-            background-repeat: no-repeat;
-            transition: 0.3s ease;
-        }
-    }
-
-    &-label-price {
-        
-        &::after {
-            content: "";
-            display: block;
-            width: 10px;
-            height: 5px;
-            margin: 0 0 0 10px;
-            background-image: url(../img/arrow-down.png);
-            background-repeat: no-repeat;
-            transition: 0.3s ease;
-        }
-    }
-
-    &-trending-form {
-        display: none;
-        flex-direction: column;
-        padding: 7px 30px 5px 9px;
-        box-sizing: border-box;
-        box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
-        background: #fff;
-        position: absolute;
-        top: 20px;
-        left: -13px;
-        z-index: 1;
-    }
-
-    &-size-form {
-        display: none;
-        flex-direction: column;
-        padding: 7px 30px 5px 9px;
-        box-sizing: border-box;
-        box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
-        background: #fff;
-        position: absolute;
-        top: 20px;
-        left: 157px;
-        z-index: 1;
-    }
-
-    &-price-form {
-        display: none;
-        flex-direction: column;
-        padding: 7px 30px 5px 9px;
-        box-sizing: border-box;
-        box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
-        background: #fff;
-        position: absolute;
-        top: 20px;
-        left: 244px;
-        z-index: 1;
-    }
-
-    &-form-label {
-        margin: 0 0 0 9px;
-    }
-
-    &-form-label-wrp {
-        margin: 0 0 6px 0;
-        display: flex;
-    }
-
-    &-form-checkbox {
-
-    }
 }
 
 .catalog-pg-product-wrp {
@@ -532,7 +392,7 @@
     }
 
     &-product-img {
-margin: 10px 0 40px 0;
+        margin: 10px 0 40px 0;
     }
 
     &-button-forward {
@@ -546,4 +406,26 @@ margin: 10px 0 40px 0;
         align-self: center;
         align-items: center;
     }
+
+    .product-pg-description {
+
+
+        &-category {
+
+        }
+
+        &-heading {
+
+        }
+
+        &-text {
+
+        }
+
+        &-price {
+
+        }
+    }
 }
+
+/* ========== Конец стилей для страницы product ========== */

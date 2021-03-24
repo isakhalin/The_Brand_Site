@@ -1,0 +1,146 @@
+@import "font.scss";
+
+
+.filter-options {
+
+    &__wrp {
+        @include fonts (400, 14px, 17px);
+        padding: 0 0 0 0;
+        display: flex;
+        position: relative;
+        color: #6F6E6E;
+        text-transform: uppercase;
+    }
+
+    &__checkbox-trending {
+        display: none;
+    
+        &:checked ~.filter-options__trending-form {
+            display: flex;
+        }
+    
+        &:checked ~.filter-options__label-trending::after {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__labels {
+        display: flex;
+        margin: 0 0 0 28px;
+        align-items: center;
+    }
+    
+    &__label-trending {
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 5px;
+            margin: 0 0 0 10px;
+            background-image: url(../img/arrow-down.png);
+            background-repeat: no-repeat;
+            transition: 0.3s ease;
+        }
+    }
+
+    &__trending-form {
+        display: none;
+        flex-direction: column;
+        padding: 7px 30px 5px 9px;
+        box-sizing: border-box;
+        box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+        background: #fff;
+        position: absolute;
+        top: 20px;
+        left: -13px;
+        z-index: 1;
+    }
+
+    &__form-label-wrp {
+        margin: 0 0 6px 0;
+        display: flex;
+    }
+
+    &__form-label {
+        margin: 0 0 0 9px;
+    }
+    
+    &__checkbox-size {
+        display: none;
+    
+        &:checked ~.filter-options__size-form {
+            display: flex;
+        }
+    
+        &:checked ~.filter-options__label-size::after {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__size-form {
+        display: none;
+        flex-direction: column;
+        padding: 7px 30px 5px 9px;
+        box-sizing: border-box;
+        box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+        background: #fff;
+        position: absolute;
+        top: 20px;
+        left: 157px;
+        z-index: 1;
+    }
+
+    &__label-size {
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 5px;
+            margin: 0 0 0 10px;
+            background-image: url(../img/arrow-down.png);
+            background-repeat: no-repeat;
+            transition: 0.3s ease;
+        }
+    }
+
+    &__checkbox-price {
+        display: none;
+    
+        &:checked ~.filter-options__price-form {
+            display: flex;
+        }
+    
+        &:checked ~.filter-options__label-price::after {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &__label-price {
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 5px;
+            margin: 0 0 0 10px;
+            background-image: url(../img/arrow-down.png);
+            background-repeat: no-repeat;
+            transition: 0.3s ease;
+        }
+    }
+    
+    &__price-form {
+        display: none;
+        flex-direction: column;
+        padding: 7px 30px 5px 9px;
+        box-sizing: border-box;
+        box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+        background: #fff;
+        position: absolute;
+        top: 20px;
+        left: 244px;
+        z-index: 1;
+    }
+}

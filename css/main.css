@@ -731,6 +731,120 @@ template {
       font-weight: 700;
       color: #F16D7F; }
 
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-light.woff2") format("woff2"), url("../fonts/lato-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+.filter-options__wrp {
+  font-family: lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 0 0 0;
+  display: flex;
+  position: relative;
+  color: #6F6E6E;
+  text-transform: uppercase; }
+.filter-options__checkbox-trending {
+  display: none; }
+  .filter-options__checkbox-trending:checked ~ .filter-options__trending-form {
+    display: flex; }
+  .filter-options__checkbox-trending:checked ~ .filter-options__label-trending::after {
+    transform: rotate(-180deg); }
+.filter-options__labels {
+  display: flex;
+  margin: 0 0 0 28px;
+  align-items: center; }
+.filter-options__label-trending::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  margin: 0 0 0 10px;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  transition: 0.3s ease; }
+.filter-options__trending-form {
+  display: none;
+  flex-direction: column;
+  padding: 7px 30px 5px 9px;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: -13px;
+  z-index: 1; }
+.filter-options__form-label-wrp {
+  margin: 0 0 6px 0;
+  display: flex; }
+.filter-options__form-label {
+  margin: 0 0 0 9px; }
+.filter-options__checkbox-size {
+  display: none; }
+  .filter-options__checkbox-size:checked ~ .filter-options__size-form {
+    display: flex; }
+  .filter-options__checkbox-size:checked ~ .filter-options__label-size::after {
+    transform: rotate(-180deg); }
+.filter-options__size-form {
+  display: none;
+  flex-direction: column;
+  padding: 7px 30px 5px 9px;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: 157px;
+  z-index: 1; }
+.filter-options__label-size::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  margin: 0 0 0 10px;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  transition: 0.3s ease; }
+.filter-options__checkbox-price {
+  display: none; }
+  .filter-options__checkbox-price:checked ~ .filter-options__price-form {
+    display: flex; }
+  .filter-options__checkbox-price:checked ~ .filter-options__label-price::after {
+    transform: rotate(-180deg); }
+.filter-options__label-price::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  margin: 0 0 0 10px;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  transition: 0.3s ease; }
+.filter-options__price-form {
+  display: none;
+  flex-direction: column;
+  padding: 7px 30px 5px 9px;
+  box-sizing: border-box;
+  box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: 244px;
+  z-index: 1; }
+
 .index-main-heading {
   margin: 0 auto;
   background: #F1E4E6;
@@ -981,97 +1095,6 @@ template {
     margin: 0 0 11px 0; }
     .catalog-filter-sublist-item:hover {
       color: #EF5B70; }
-  .catalog-filter-checkbox-trending {
-    display: none; }
-    .catalog-filter-checkbox-trending:checked ~ .catalog-filter-trending-form {
-      display: flex; }
-    .catalog-filter-checkbox-trending:checked ~ .catalog-filter-label-trending::after {
-      transform: rotate(-180deg); }
-  .catalog-filter-checkbox-size {
-    display: none; }
-    .catalog-filter-checkbox-size:checked ~ .catalog-filter-size-form {
-      display: flex; }
-    .catalog-filter-checkbox-size:checked ~ .catalog-filter-label-size::after {
-      transform: rotate(-180deg); }
-  .catalog-filter-checkbox-price {
-    display: none; }
-    .catalog-filter-checkbox-price:checked ~ .catalog-filter-price-form {
-      display: flex; }
-    .catalog-filter-checkbox-price:checked ~ .catalog-filter-label-price::after {
-      transform: rotate(-180deg); }
-  .catalog-filter-options-wrp {
-    padding: 0 0 0 0;
-    display: flex;
-    position: relative; }
-  .catalog-filter-labels {
-    display: flex;
-    margin: 0 0 0 28px;
-    align-items: center; }
-  .catalog-filter-label-trending::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 5px;
-    margin: 0 0 0 10px;
-    background-image: url(../img/arrow-down.png);
-    background-repeat: no-repeat;
-    transition: 0.3s ease; }
-  .catalog-filter-label-size::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 5px;
-    margin: 0 0 0 10px;
-    background-image: url(../img/arrow-down.png);
-    background-repeat: no-repeat;
-    transition: 0.3s ease; }
-  .catalog-filter-label-price::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 5px;
-    margin: 0 0 0 10px;
-    background-image: url(../img/arrow-down.png);
-    background-repeat: no-repeat;
-    transition: 0.3s ease; }
-  .catalog-filter-trending-form {
-    display: none;
-    flex-direction: column;
-    padding: 7px 30px 5px 9px;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
-    background: #fff;
-    position: absolute;
-    top: 20px;
-    left: -13px;
-    z-index: 1; }
-  .catalog-filter-size-form {
-    display: none;
-    flex-direction: column;
-    padding: 7px 30px 5px 9px;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
-    background: #fff;
-    position: absolute;
-    top: 20px;
-    left: 157px;
-    z-index: 1; }
-  .catalog-filter-price-form {
-    display: none;
-    flex-direction: column;
-    padding: 7px 30px 5px 9px;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
-    background: #fff;
-    position: absolute;
-    top: 20px;
-    left: 244px;
-    z-index: 1; }
-  .catalog-filter-form-label {
-    margin: 0 0 0 9px; }
-  .catalog-filter-form-label-wrp {
-    margin: 0 0 6px 0;
-    display: flex; }
 
 .catalog-pg-product-wrp {
   max-width: 1170px;
@@ -1155,5 +1178,7 @@ template {
     justify-content: center;
     align-self: center;
     align-items: center; }
+
+/* ========== Конец стилей для страницы product ========== */
 
 /*# sourceMappingURL=main.css.map */
