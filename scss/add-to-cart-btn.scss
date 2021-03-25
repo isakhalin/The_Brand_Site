@@ -1,6 +1,27 @@
+@import "mixin.scss";
+
 .add-to-cart-btn {
+    @include fonts (400, 16px, 19px);
+    background-color: transparent;
+    border: 1px solid #FF6A6A;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px 15px 25px;
+    color: #F26376;
+    fill: #EF5B70;
+    transition: 0.3s ease;
+    
+    &:hover {
+        background-color: #F26376;
+        color: #ffffff;
+        fill: #ffffff;
+    }
 
     &__cart-svg {
+        margin: 0 25px 0 0;
+    }
+
+    &__text {
 
     }
 }

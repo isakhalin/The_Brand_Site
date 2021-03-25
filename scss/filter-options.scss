@@ -1,16 +1,14 @@
 @import "font.scss";
 
+/* ========== Начало блока filter-options [filter-options.scss] ========== */
 
 .filter-options {
-
-    &__wrp {
         @include fonts (400, 14px, 17px);
         padding: 0 0 0 0;
         display: flex;
         position: relative;
         color: #6F6E6E;
         text-transform: uppercase;
-    }
 
     &__checkbox-trending {
         display: none;
@@ -144,3 +142,5 @@
         z-index: 1;
     }
 }
+
+/* ========== Конец блока filter-options [filter-options.scss] ========== */
