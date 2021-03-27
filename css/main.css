@@ -1277,5 +1277,87 @@ template {
   margin: 0 15px 30px 15px; }
 
 /* ========== Конец стилей для страницы product ========== */
+/* ========== Начало стилей для страницы cart ========== */
+.cart {
+  padding: 100px 0 130px 0;
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between; }
+  .cart-product-wrp {
+    font-family: lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    display: flex;
+    flex-direction: column;
+    max-width: 652px;
+    width: 100%; }
+  .cart-product {
+    margin: 0 0 40px 0;
+    display: flex;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13); }
+    .cart-product-text {
+      position: relative;
+      width: 100%;
+      padding: 22px 48px 62px 31px; }
+      .cart-product-text-brand {
+        display: block;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222; }
+      .cart-product-text-item-type {
+        display: block;
+        margin: 0 0 40px 0;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        text-transform: uppercase; }
+      .cart-product-text-item-wrp {
+        display: flex; }
+      .cart-product-text-item {
+        margin: 0 10px 0 0; }
+      .cart-product-text-item-price-counter {
+        color: #EF5B70; }
+      .cart-product-text-item-color-counter {
+        text-transform: capitalize; }
+      .cart-product-text-item-size-counter {
+        text-transform: uppercase; }
+      .cart-product-text-item-quantity-counter {
+        width: 44px;
+        height: 25px;
+        display: block;
+        text-align: center;
+        border: 1px solid #EAEAEA; }
+  .cart-delete {
+    background: transparent;
+    position: absolute;
+    border: none;
+    top: 28px;
+    right: 22px;
+    cursor: pointer; }
+    .cart-delete:hover {
+      fill: #EF5B70; }
+  .cart-button-wrp {
+    margin: 70px 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+  .cart-form-wrp {
+    font-family: lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    display: flex;
+    flex-direction: column; }
+  .cart-form {
+    display: flex;
+    flex-direction: column; }
+
+/* ========== Конец стилей для страницы cart ========== */
 
 /*# sourceMappingURL=main.css.map */

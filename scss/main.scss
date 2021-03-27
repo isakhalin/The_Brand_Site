@@ -504,3 +504,170 @@
     }
 }
 /* ========== Конец стилей для страницы product ========== */
+/* ========== Начало стилей для страницы cart ========== */
+
+.cart {
+    padding: 100px 0 130px 0;
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+    &-product-wrp {
+        @include fonts (400, 22px, 26px);
+        color: #575757;
+        display: flex;
+        flex-direction: column;
+        max-width: 652px;
+        width: 100%;
+    }
+
+    &-product {
+        margin: 0 0 40px 0;
+        display: flex;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+        &-img {
+
+        }
+
+        &-text {
+            position: relative;
+            width: 100%;
+            padding: 22px 48px 62px 31px;
+
+            &-brand {
+                display: block;
+                text-transform: uppercase;
+                font-size: 24px;
+                line-height: 29px;
+                color: #222222;
+            }
+
+            &-item-type {
+                display: block;
+                margin: 0 0 40px 0;
+                font-size: 24px;
+                line-height: 29px;
+                color: #222222;
+                text-transform: uppercase;
+            }
+
+            &-item-wrp {
+                display: flex;
+            }
+
+            &-item {
+                margin: 0 10px 0 0;
+            }
+
+            &-item-price-counter {
+                color: #EF5B70;
+            }
+
+            &-item-color-counter {
+                text-transform: capitalize;
+            }
+
+            &-item-size-counter {
+                text-transform: uppercase;
+            }
+
+            &-item-quantity-counter {
+                width: 44px;
+                height: 25px;
+                display: block;
+                text-align: center;
+                border: 1px solid #EAEAEA;
+            }
+        }
+    }
+
+    &-delete {
+        background: transparent;
+        position: absolute;
+        border: none;
+        top: 28px;
+        right: 22px;
+        cursor: pointer;
+
+        &:hover {
+            fill: #EF5B70;
+        }
+
+        &-svg {
+
+        }
+    }
+
+    &-button-wrp {
+        margin: 70px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-clear {
+
+    }
+
+    &-continue {
+
+    }
+
+    &-form-wrp {
+        @include fonts (300, 16px, 19px);
+        color: #222222;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+
+        &-heading {
+
+        }
+
+        &-input {
+
+        }
+
+        &-submit-btn {
+
+        }
+    }
+
+    &-calculator {
+
+        &-total-wrp {
+
+        }
+
+        &-total-text {
+
+        }
+
+        &-total {
+
+        }
+
+        &-grand-total-wrp {
+
+        }
+
+        &-grand-total-text {
+
+        }
+
+        &-grand-total {
+
+        }
+
+        &-btn {
+
+        }
+    }
+
+}
+/* ========== Конец стилей для страницы cart ========== */
