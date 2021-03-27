@@ -1323,9 +1323,11 @@ template {
       .cart-product-text-item-price-counter {
         color: #EF5B70; }
       .cart-product-text-item-color-counter {
-        text-transform: capitalize; }
+        text-transform: capitalize;
+        color: #EF5B70; }
       .cart-product-text-item-size-counter {
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: #EF5B70; }
       .cart-product-text-item-quantity-counter {
         width: 44px;
         height: 25px;
@@ -1342,21 +1344,124 @@ template {
     .cart-delete:hover {
       fill: #EF5B70; }
   .cart-button-wrp {
-    margin: 70px 0 0 0;
+    margin: 30px 0 0 0;
     display: flex;
     justify-content: space-between; }
+  .cart-clear {
+    font-family: lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    background: transparent;
+    color: #222222;
+    border: 1px solid #a4a4a4;
+    padding: 15px 40px 15px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease; }
+    .cart-clear:hover {
+      background: #F16D7F;
+      color: #EAEAEA; }
+  .cart-continue {
+    font-family: lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    background: transparent;
+    border: 1px solid #a4a4a4;
+    padding: 15px 40px 15px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease; }
+    .cart-continue:hover {
+      background: #F16D7F;
+      color: #EAEAEA; }
   .cart-form-wrp {
     font-family: lato;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+    padding: 20px 0 0 0;
     color: #222222;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%; }
   .cart-form {
     display: flex;
     flex-direction: column; }
+    .cart-form-heading {
+      text-transform: uppercase; }
+    .cart-form-input {
+      background: #ffffff;
+      border: 1px solid #a4a4a4;
+      width: 100%;
+      box-sizing: border-box;
+      height: 45px;
+      margin: 20px 0 0 0;
+      padding: 0 15px 0 15px; }
+    .cart-form-submit-btn {
+      font-size: 11px;
+      line-height: 13px;
+      max-width: fit-content;
+      margin: 25px 0 0 0;
+      background: transparent;
+      border: 1px solid #a4a4a4;
+      color: #a4a4a4;
+      padding: 10px 15px 10px 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .cart-form-submit-btn:hover {
+        background: #F16D7F;
+        color: #EAEAEA; }
+  .cart-calculator {
+    padding: 40px 45px 40px 45px;
+    background: #F5F3F3;
+    margin: 57px 0 0 0; }
+    .cart-calculator-total-main-wrp::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #e2e2e2; }
+    .cart-calculator-total-wrp {
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: flex-end; }
+    .cart-calculator-total-text {
+      margin: 0 25px 0 0; }
+    .cart-calculator-grand-total-wrp {
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      margin: 12px 0 20px 0;
+      display: flex;
+      justify-content: flex-end; }
+    .cart-calculator-grand-total-text {
+      margin: 0 25px 0 0; }
+    .cart-calculator-btn {
+      font-size: 11px;
+      line-height: 13px;
+      width: 100%;
+      margin: 17px 0 0 0;
+      background: #F16D7F;
+      border: 1px solid transparent;
+      color: #ffffff;
+      padding: 10px 15px 10px 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s ease; }
+      .cart-calculator-btn:hover {
+        background: #ffffff;
+        color: #F16D7F;
+        border: 1px solid #a4a4a4; }
 
 /* ========== Конец стилей для страницы cart ========== */
 
