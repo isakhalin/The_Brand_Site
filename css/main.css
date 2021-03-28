@@ -1464,5 +1464,98 @@ template {
         border: 1px solid #a4a4a4; }
 
 /* ========== Конец стилей для страницы cart ========== */
+/* ========== Начало стилей для страницы registration ========== */
+.registration-pg-registration-wrp {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 65px 0 95px 0; }
+.registration-pg-registration {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  .registration-pg-registration-form-wrp {
+    font-family: lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+    text-transform: capitalize; }
+  .registration-pg-registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .registration-pg-registration-form-text {
+      margin: 30px 0 0 0; }
+      .registration-pg-registration-form-text:first-child {
+        margin: 0 0 0 0; }
+    .registration-pg-registration-form-input {
+      height: 45px;
+      margin: 20px 0 0 0; }
+      .registration-pg-registration-form-input::-webkit-input-placeholder {
+        color: #b1b1b1; }
+    .registration-pg-registration-form-radio-wrp {
+      margin: 30px 0 0 0;
+      display: flex;
+      align-items: center; }
+    .registration-pg-registration-form-radio {
+      margin: 0 0 0 20px; }
+      .registration-pg-registration-form-radio:first-child {
+        margin: 0 0 0 0; }
+      .registration-pg-registration-form-radio-Male {
+        margin: 0 0 0 10px; }
+      .registration-pg-registration-form-radio-Female {
+        margin: 0 0 0 10px; }
+    .registration-pg-registration-form-description {
+      font-size: 13px;
+      line-height: 16px;
+      margin: 15px 0 0 0;
+      color: #b1b1b1;
+      text-transform: none; }
+    .registration-pg-registration-form-btn {
+      margin: 40px 0 0 0;
+      background: #F16D7F;
+      color: #EAEAEA;
+      border: 1px solid transparent;
+      padding: 16px 30px 16px 30px;
+      width: fit-content;
+      text-transform: uppercase;
+      transition: 0.3s ease; }
+      .registration-pg-registration-form-btn:hover {
+        background: #EAEAEA;
+        border: 1px solid #F16D7F;
+        color: #F16D7F; }
+  .registration-pg-registration-text {
+    font-family: lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 650px; }
+    .registration-pg-registration-text-heading {
+      text-transform: uppercase; }
+    .registration-pg-registration-text-paragraph {
+      margin: 20px 0 20px 0; }
+    .registration-pg-registration-text-point {
+      padding: 20px 0 0 0;
+      display: flex;
+      flex-direction: column; }
+      .registration-pg-registration-text-point-item {
+        margin: 16px 0 0 0;
+        display: flex; }
+        .registration-pg-registration-text-point-item:first-child {
+          margin-top: 0; }
+        .registration-pg-registration-text-point-item::before {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 16px;
+          margin: 6px 24px 0 0;
+          background: url(../img/check.svg); }
+
+/* ========== Конец стилей для страницы registration ========== */
 
 /*# sourceMappingURL=main.css.map */
