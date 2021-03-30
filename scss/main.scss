@@ -958,8 +958,14 @@
 
 @media (max-width: 375px) {
 
-    .index-main-heading {
-    
+    .category {
+
+        &-box {
+            max-width: 343px;
+            height: 236px;
+        }
     }
 }
 /* ========== Конец медиазапросов ========== */
+
+

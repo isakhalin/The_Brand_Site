@@ -1614,6 +1614,10 @@ template {
     justify-content: center; }
   .index-main-heading-textbox {
     padding: 0 0 0 0; } }
+@media (max-width: 375px) {
+  .category-box {
+    max-width: 343px;
+    height: 236px; } }
 /* ========== Конец медиазапросов ========== */
 
 /*# sourceMappingURL=main.css.map */
