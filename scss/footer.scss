@@ -48,7 +48,7 @@
 
     &__form {
         @include fonts (700, 24px, 40px);
-        padding: 35px 0 0 0;
+        margin: 35px 0 0 0;
         max-width: 356px;
         width: 100%;
         text-transform: uppercase;
@@ -168,3 +168,20 @@
 }
 
 /* ========== Конец блока footer [footer.scss] ========== */
+/* ========== Начало медиазапросов ========== */
+
+@media (max-width: 1140px) {
+
+    .footer {
+
+        &__subscribe-wrp {
+            flex-direction: column;
+            padding: 65px 20px 140px 20px;
+        }
+    
+        &__form {
+            margin: 75px 0 0 0;
+        }
+    }
+}
+/* ========== Конец медиазапросов ========== */

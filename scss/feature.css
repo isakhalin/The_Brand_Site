@@ -42,5 +42,14 @@
     margin: 16px 0 0 0; }
 
 /* ========== Конец блока feature [feature.scss] ========== */
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 1140px) {
+  .feature__wrp {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 64px 0; }
+  .feature__item {
+    margin: 48px 0 0 0; } }
+/* ========== Конец медиазапросов ========== */
 
 /*# sourceMappingURL=feature.css.map */

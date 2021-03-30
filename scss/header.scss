@@ -14,7 +14,8 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        padding: 20px 0 20px 0;
+        padding: 20px 32px 20px 32px;
+        box-sizing: border-box;
     }
     
     &__logo {
@@ -204,6 +205,34 @@
     &__menu-svg-cart {
         // border: 1px solid #fff;
         fill: #E8E8E8;
+    }
+}
+
+
+/* ========== Начало медиазапросов ========== */
+
+@media (max-width: 1024px) {
+
+    .header {
+
+        &__wrp {
+
+        }
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .header {
+            
+        &__menu {
+            display: flex;
+        }
+
+        &__menu-item {
+            display: none;
+        }
     }
 }
 

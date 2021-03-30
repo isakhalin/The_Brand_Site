@@ -331,7 +331,8 @@ template {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0 20px 0; }
+    padding: 20px 32px 20px 32px;
+    box-sizing: border-box; }
   .header__logo {
     display: flex;
     align-items: flex-end; }
@@ -460,6 +461,12 @@ template {
   .header__menu-svg-cart {
     fill: #E8E8E8; }
 
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 375px) {
+  .header__menu {
+    display: flex; }
+  .header__menu-item {
+    display: none; } }
 /* ========== Конец блока header [header.scss] ========== */
 /* ========== Начало блока product [product.scss] ========== */
 .product {
@@ -560,6 +567,15 @@ template {
     margin: 16px 0 0 0; }
 
 /* ========== Конец блока feature [feature.scss] ========== */
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 1140px) {
+  .feature__wrp {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 64px 0; }
+  .feature__item {
+    margin: 48px 0 0 0; } }
+/* ========== Конец медиазапросов ========== */
 /* ========== Начало блока footer [footer.scss] ========== */
 .footer__subscribe {
   width: 100%;
@@ -602,7 +618,7 @@ template {
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
-  padding: 35px 0 0 0;
+  margin: 35px 0 0 0;
   max-width: 356px;
   width: 100%;
   text-transform: uppercase;
@@ -690,6 +706,14 @@ template {
   color: #FBFBFB; }
 
 /* ========== Конец блока footer [footer.scss] ========== */
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 1140px) {
+  .footer__subscribe-wrp {
+    flex-direction: column;
+    padding: 65px 20px 140px 20px; }
+  .footer__form {
+    margin: 75px 0 0 0; } }
+/* ========== Конец медиазапросов ========== */
 .page-nav {
   margin: 0 auto;
   max-width: 1600px;
@@ -915,14 +939,14 @@ template {
     color: #F16D7F; }
 
 .content-wrp {
-  max-width: 1140px;
+  max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   padding: 0 0 0 0; }
 
 .category {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 65px 0 96px 0;
   font-family: lato;
@@ -935,7 +959,8 @@ template {
     max-width: 360px;
     width: 100%;
     height: 260px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin: 0 15px 30px 15px; }
     .category-box--women-bg {
       background-image: url(../img/for_women.png);
       background-size: contain; }
@@ -951,7 +976,7 @@ template {
       height: 180px;
       background-image: url(..//img/Accesories.png);
       background-size: cover;
-      margin: 30px 0 0 0; }
+      margin: 0 15px 0 15px; }
   .category-link {
     display: flex;
     flex-direction: column;
@@ -1557,5 +1582,38 @@ template {
           background: url(../img/check.svg); }
 
 /* ========== Конец стилей для страницы registration ========== */
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 1024px) {
+  .index-main-heading-box {
+    height: 368px;
+    background-size: contain;
+    background-position: -30px; }
+  .index-main-heading-textbox::before {
+    height: 75px; }
+
+  .brand {
+    font-size: 44px;
+    line-height: 53px; }
+    .brand-text {
+      font-size: 24px;
+      line-height: 29px; }
+
+  .category {
+    padding: 20px 6px 155px 6px;
+    justify-content: center; }
+    .category-box {
+      max-width: 232px;
+      height: 167px;
+      margin: 0 10px 20px 10px; }
+      .category-box--long {
+        max-width: 735px;
+        height: 116px; } }
+@media (max-width: 600px) {
+  .index-main-heading-box {
+    background-image: none;
+    justify-content: center; }
+  .index-main-heading-textbox {
+    padding: 0 0 0 0; } }
+/* ========== Конец медиазапросов ========== */
 
 /*# sourceMappingURL=main.css.map */
