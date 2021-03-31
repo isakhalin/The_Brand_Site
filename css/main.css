@@ -946,7 +946,6 @@ template {
 
 .category {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   padding: 65px 0 96px 0;
   font-family: lato;
@@ -955,6 +954,8 @@ template {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase; }
+  .category-box-wrp {
+    display: flex; }
   .category-box {
     max-width: 360px;
     width: 100%;
@@ -970,10 +971,13 @@ template {
     .category-box--accesories-bg {
       max-width: 1140px;
       width: 100%; }
-    .category-box--long {
-      max-width: 1140px;
-      width: 100%;
-      margin: 0 15px 0 15px; }
+  .category-long-box-wrp {
+    padding: 0 15px 30px 15px; }
+  .category-long-box {
+    max-width: 1140px;
+    width: 100%;
+    line-height: 0;
+    position: relative; }
   .category-link {
     line-height: 19px;
     display: flex;
@@ -1599,12 +1603,7 @@ template {
 
   .category {
     padding: 20px 6px 155px 6px;
-    justify-content: center; }
-    .category-box {
-      max-width: 232px;
-      margin: 0 10px 20px 10px; }
-      .category-box--long {
-        max-width: 735px; } }
+    justify-content: center; } }
 @media (max-width: 600px) {
   .index-main-heading-box {
     background-image: none;
