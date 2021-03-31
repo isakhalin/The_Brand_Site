@@ -958,26 +958,24 @@ template {
   .category-box {
     max-width: 360px;
     width: 100%;
-    height: 260px;
-    background-repeat: no-repeat;
-    margin: 0 15px 30px 15px; }
+    line-height: 0;
+    margin: 0 15px 30px 15px;
+    position: relative; }
     .category-box--women-bg {
-      background-image: url(../img/for_women.png);
-      background-size: contain; }
-    .category-box--man-bg {
-      background-image: url(../img/for_men.png);
-      background-size: contain; }
+      max-width: 100%; }
+    .category-box--men-bg {
+      max-width: 100%; }
     .category-box--kids-bg {
-      background-image: url(../img/for_kids.png);
-      background-size: contain; }
+      max-width: 100%; }
+    .category-box--accesories-bg {
+      max-width: 1140px;
+      width: 100%; }
     .category-box--long {
       max-width: 1140px;
       width: 100%;
-      height: 180px;
-      background-image: url(..//img/Accesories.png);
-      background-size: cover;
       margin: 0 15px 0 15px; }
   .category-link {
+    line-height: 19px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -986,7 +984,8 @@ template {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: #ffffff; }
+    color: #ffffff;
+    position: absolute; }
     .category-link--color-pink {
       font-weight: 700;
       font-size: 24px;
@@ -1603,11 +1602,9 @@ template {
     justify-content: center; }
     .category-box {
       max-width: 232px;
-      height: 167px;
       margin: 0 10px 20px 10px; }
       .category-box--long {
-        max-width: 735px;
-        height: 116px; } }
+        max-width: 735px; } }
 @media (max-width: 600px) {
   .index-main-heading-box {
     background-image: none;
@@ -1616,8 +1613,7 @@ template {
     padding: 0 0 0 0; } }
 @media (max-width: 375px) {
   .category-box {
-    max-width: 343px;
-    height: 236px; } }
+    max-width: 343px; } }
 /* ========== Конец медиазапросов ========== */
 
 /*# sourceMappingURL=main.css.map */

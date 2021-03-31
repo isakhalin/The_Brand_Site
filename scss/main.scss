@@ -78,40 +78,47 @@
     &-box {
         max-width: 360px;
         width: 100%;
-        height: 260px;
-        background-repeat: no-repeat;
+        line-height: 0;
+        // height: 260px;
+        // background-repeat: no-repeat;
         margin: 0 15px 30px 15px;
+        position: relative;
         
         &--women-bg {
-            background-image: url(../img/for_women.png);
-            background-size: contain;
+            max-width: 100%;
+            // background-image: url(../img/for_women.png);
+            // background-size: contain;
         }
 
-        &--man-bg {
-            background-image: url(../img/for_men.png);
-            background-size: contain;
+        &--men-bg {
+            // background-image: url(../img/for_men.png);
+            // background-size: contain;
+            max-width: 100%;
         }
 
         &--kids-bg {
-            background-image: url(../img/for_kids.png);
-            background-size: contain;
+            // background-image: url(../img/for_kids.png);
+            // background-size: contain;
+            max-width: 100%;
         }
 
-        // &--accesories-bg {
-
-        // }
+        &--accesories-bg {
+            max-width: 1140px;
+            width: 100%;
+        }
         
         &--long {
             max-width: 1140px;
             width: 100%;
-            height: 180px;
-            background-image: url(..//img/Accesories.png);
-            background-size: cover;
+            // height: 180px;
+            // background-image: url(..//img/Accesories.png);
+            // background-size: cover;
             margin: 0 15px 0 15px;
         }
     }
 
     &-link {
+        line-height: 19px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -121,6 +128,7 @@
         height: 100%;
         text-decoration: none;
         color: #ffffff;
+        position: absolute;
         
         &--color-pink {
             font-weight: 700;
@@ -928,12 +936,12 @@
 
         &-box {
             max-width: 232px;
-            height: 167px;
+            // height: 167px;
             margin: 0 10px 20px 10px;
             
             &--long {
                 max-width: 735px;
-                height: 116px;
+                // height: 116px;
             }
         }
 
@@ -962,7 +970,7 @@
 
         &-box {
             max-width: 343px;
-            height: 236px;
+            // height: 236px;
         }
     }
 }
