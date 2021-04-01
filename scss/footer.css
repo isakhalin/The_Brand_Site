@@ -130,12 +130,30 @@
 
 /* ========== Конец блока footer [footer.scss] ========== */
 /* ========== Начало медиазапросов ========== */
-@media (max-width: 1140px) {
+@media (max-width: 1024px) {
   .footer__subscribe-wrp {
     flex-direction: column;
     padding: 65px 20px 140px 20px; }
   .footer__form {
     margin: 75px 0 0 0; } }
+@media (max-width: 600px) {
+  .footer__subscribe-wrp {
+    padding: 65px 20px 110px 20px; }
+  .footer__quote-text {
+    font-size: 18px;
+    line-height: 22px; }
+  .footer__form-heading {
+    line-height: 37px; }
+  .footer__form-text {
+    font-size: 14px;
+    line-height: 21px; }
+  .footer__copyright-wrp {
+    flex-direction: column-reverse;
+    padding: 40px 20px 9px 20px; }
+  .footer__social-box {
+    margin: 0 0 40px 0; }
+  .footer__social-link:first-child {
+    margin: 0 0 0 0; } }
 /* ========== Конец медиазапросов ========== */
 
 /*# sourceMappingURL=footer.css.map */

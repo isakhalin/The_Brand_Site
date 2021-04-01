@@ -170,7 +170,7 @@
 /* ========== Конец блока footer [footer.scss] ========== */
 /* ========== Начало медиазапросов ========== */
 
-@media (max-width: 1140px) {
+@media (max-width: 1024px) {
 
     .footer {
 
@@ -184,4 +184,42 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+
+    .footer {
+
+        &__subscribe-wrp {
+            padding: 65px 20px 110px 20px;
+        }
+
+        &__quote-text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &__form-heading {
+            line-height: 37px;
+        }
+
+        &__form-text {
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        &__copyright-wrp {
+            flex-direction: column-reverse;
+            padding: 40px 20px 9px 20px;
+        }
+
+        &__social-box {
+            margin: 0 0 40px 0;
+        }
+
+        &__social-link:first-child {
+            margin: 0 0 0 0;
+        }
+    }
+}
+
 /* ========== Конец медиазапросов ========== */
