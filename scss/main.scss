@@ -554,9 +554,9 @@
         display: flex;
         box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 
-        &-img {
+        // &-img {
 
-        }
+        // }
 
         &-text {
             position: relative;
@@ -624,9 +624,9 @@
             fill: #EF5B70;
         }
 
-        &-svg {
+        // &-svg {
 
-        }
+        // }
     }
 
     &-button-wrp {
@@ -743,9 +743,9 @@
             margin: 0 25px 0 0;
         }
 
-        &-total {
+        // &-total {
 
-        }
+        // }
 
         &-grand-total-wrp {
             font-size: 16px;
@@ -760,9 +760,9 @@
             margin: 0 25px 0 0;
         }
 
-        &-grand-total {
+        // &-grand-total {
 
-        }
+        // }
 
         &-btn {
             font-size: 11px;
@@ -952,14 +952,14 @@
         padding: 20px 6px 155px 6px;
         justify-content: center;
 
-        &-box {
-            // max-width: 232px;
-            // margin: 0 10px 20px 10px;
+        // &-box {
+        //     max-width: 232px;
+        //     margin: 0 10px 20px 10px;
             
-            &-long {
-                // max-width: 735px;
-            }
-        }
+        //     &-long {
+        //         max-width: 735px;
+        //     }
+        // }
 
     }
     
@@ -1021,6 +1021,16 @@
 
     .product--mgn {
         margin: 0 15px 16px 15px;
+    }
+
+    .catalog-filter {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .filter-options {
+        font-size: 12px;
+        line-height: 14px;
     }
 }
 

@@ -1,0 +1,22 @@
+.add-to-cart-btn {
+  font-family: lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: transparent;
+  border: 1px solid #FF6A6A;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px 15px 25px;
+  color: #F26376;
+  fill: #EF5B70;
+  transition: 0.3s ease; }
+  .add-to-cart-btn:hover {
+    background-color: #F26376;
+    color: #ffffff;
+    fill: #ffffff; }
+  .add-to-cart-btn__cart-svg {
+    margin: 0 25px 0 0; }
+
+/*# sourceMappingURL=add-to-cart-btn.css.map */

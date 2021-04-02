@@ -909,6 +909,9 @@ template {
     left: 244px;
     z-index: 1; }
 
+@media (max-width: 600px) {
+  .filter-options__labels {
+    margin: 0 0 0 24px; } }
 /* ========== Конец блока filter-options [filter-options.scss] ========== */
 .index-main-heading {
   margin: 0 auto;
@@ -1651,7 +1654,15 @@ template {
     margin: 20px 0 24px 0; }
 
   .product--mgn {
-    margin: 0 15px 16px 15px; } }
+    margin: 0 15px 16px 15px; }
+
+  .catalog-filter {
+    font-size: 12px;
+    line-height: 14px; }
+
+  .filter-options {
+    font-size: 12px;
+    line-height: 14px; } }
 @media (max-width: 375px) {
   .category-box {
     max-width: 343px; } }

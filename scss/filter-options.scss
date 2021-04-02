@@ -3,12 +3,12 @@
 /* ========== Начало блока filter-options [filter-options.scss] ========== */
 
 .filter-options {
-        @include fonts (400, 14px, 17px);
-        padding: 0 0 0 0;
-        display: flex;
-        position: relative;
-        color: #6F6E6E;
-        text-transform: uppercase;
+    @include fonts (400, 14px, 17px);
+    padding: 0 0 0 0;
+    display: flex;
+    position: relative;
+    color: #6F6E6E;
+    text-transform: uppercase;
 
     &__checkbox-trending {
         display: none;
@@ -142,5 +142,16 @@
         z-index: 1;
     }
 }
+
+@media (max-width: 600px) {
+
+    .filter-options {
+
+        &__labels {
+            margin: 0 0 0 24px;
+        }
+    }
+}
+
 
 /* ========== Конец блока filter-options [filter-options.scss] ========== */
