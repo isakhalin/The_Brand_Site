@@ -62,9 +62,9 @@
         }
     }
 
-    // &__menu {
-
-    // }
+    &__menu {
+        margin: 0 0 0 10px;
+    }
 
     &__menu-list {
         display: flex;
@@ -222,10 +222,20 @@
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
+    
+    .header {
+
+        &__search {
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
 
     .header {
-            
+    
         &__menu {
             display: flex;
         }

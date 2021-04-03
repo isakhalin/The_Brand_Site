@@ -39,6 +39,8 @@
       border: 4px solid #FBFBFB;
       width: 100%;
       height: 28px; }
+  .header__menu {
+    margin: 0 0 0 10px; }
   .header__menu-list {
     display: flex;
     padding: 0 0 0 0;
@@ -140,7 +142,10 @@
     fill: #E8E8E8; }
 
 /* ========== Начало медиазапросов ========== */
-@media (max-width: 375px) {
+@media (max-width: 450px) {
+  .header__search {
+    margin: 0 0 0 10px; } }
+@media (max-width: 400px) {
   .header__menu {
     display: flex; }
   .header__menu-item {
