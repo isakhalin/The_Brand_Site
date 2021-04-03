@@ -3,14 +3,18 @@
 .page-nav {
   margin: 0 auto;
   max-width: 1600px;
-  background: #F8F3F4; }
+  background: #F8F3F4;
+  min-height: 148px;
+  display: flex;
+  align-items: center; }
   .page-nav__wrp {
     display: flex;
     max-width: 1140px;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-    padding: 60px 10px 60px 10px; }
+    width: 100%;
+    padding: 0 10px 0 10px; }
   .page-nav__heading {
     font-family: lato;
     font-style: normal;
@@ -44,8 +48,7 @@
 /* ========== Начало медиазапросов ========== */
 @media (max-width: 600px) {
   .page-nav__wrp {
-    flex-direction: column;
-    padding: 24px 10px 46px 10px; }
+    flex-direction: column; }
   .page-nav__nav-list {
     margin: 32px 0 0 0; } }
 /* ========== Конец блока page-nav [page-nav.scss] ========== */

@@ -327,12 +327,10 @@ template {
   margin: 0 auto; }
   .header__wrp {
     max-width: 1140px;
-    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 20px 32px 20px 32px;
-    box-sizing: border-box; }
+    padding: 20px 15px 20px 15px; }
   .header__logo {
     display: flex;
     align-items: flex-end; }
@@ -736,14 +734,18 @@ template {
 .page-nav {
   margin: 0 auto;
   max-width: 1600px;
-  background: #F8F3F4; }
+  background: #F8F3F4;
+  min-height: 148px;
+  display: flex;
+  align-items: center; }
   .page-nav__wrp {
     display: flex;
     max-width: 1140px;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-    padding: 60px 10px 60px 10px; }
+    width: 100%;
+    padding: 0 10px 0 10px; }
   .page-nav__heading {
     font-family: lato;
     font-style: normal;
@@ -777,8 +779,7 @@ template {
 /* ========== Начало медиазапросов ========== */
 @media (max-width: 600px) {
   .page-nav__wrp {
-    flex-direction: column;
-    padding: 24px 10px 46px 10px; }
+    flex-direction: column; }
   .page-nav__nav-list {
     margin: 32px 0 0 0; } }
 /* ========== Конец блока page-nav [page-nav.scss] ========== */
@@ -1329,7 +1330,7 @@ template {
 /* ========== Конец стилей для страницы product ========== */
 /* ========== Начало стилей для страницы cart ========== */
 .cart {
-  padding: 100px 0 130px 0;
+  padding: 100px 16px 130px 16px;
   display: flex;
   max-width: 1140px;
   margin: 0 auto;
@@ -1435,6 +1436,7 @@ template {
     font-size: 16px;
     line-height: 19px;
     padding: 20px 0 0 0;
+    margin: 0 0 0 10px;
     color: #222222;
     display: flex;
     flex-direction: column;
@@ -1496,6 +1498,8 @@ template {
       justify-content: flex-end; }
     .cart-calculator-grand-total-text {
       margin: 0 25px 0 0; }
+    .cart-calculator-grand-total {
+      color: #F16D7F; }
     .cart-calculator-btn {
       font-size: 11px;
       line-height: 13px;
@@ -1522,6 +1526,7 @@ template {
 .registration-pg-registration {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
   display: flex;
   justify-content: space-between; }
   .registration-pg-registration-form-wrp {
@@ -1584,7 +1589,8 @@ template {
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    max-width: 650px; }
+    max-width: 650px;
+    margin: 0 0 0 15px; }
     .registration-pg-registration-text-heading {
       text-transform: uppercase; }
     .registration-pg-registration-text-paragraph {
@@ -1634,7 +1640,33 @@ template {
     max-width: 550px; }
 
   .product-pg-product-wrp {
-    margin: 0 10px 30px 10px; } }
+    margin: 0 10px 30px 10px; }
+
+  .cart {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 16px 130px 16px; }
+    .cart-product-wrp {
+      max-width: none; }
+    .cart-button-wrp {
+      max-width: 508px;
+      align-self: center;
+      min-width: 508px; }
+    .cart-form-wrp {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: none;
+      padding: 70px 0 0 0;
+      margin: 0 0 0 0; }
+    .cart-form {
+      max-width: 360px;
+      width: 100%; }
+    .cart-calculator {
+      max-width: 360px;
+      width: 100%;
+      margin: 38px 0 0 16px;
+      box-sizing: border-box;
+      max-height: 214px; } }
 @media (max-width: 900px) {
   .category-box {
     margin: 0 7px 14px 7px; }
@@ -1689,7 +1721,63 @@ template {
     margin: 81px 0 0 0; }
 
   .product-pg-products {
-    padding: 65px 0 35px 0; } }
+    padding: 65px 0 35px 0; }
+
+  .cart {
+    padding: 40px 10px 96px 10px; }
+    .cart-product-wrp {
+      font-size: 14px;
+      line-height: 17px; }
+    .cart-product-img {
+      width: 143px;
+      height: 188px; }
+    .cart-product-text {
+      padding: 22px 48px 10px 17px; }
+    .cart-product-text-brand {
+      font-size: 16px;
+      line-height: 19px; }
+    .cart-product-text-item-type {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 0 25px 0; }
+    .cart-product-text-item-quantity-counter {
+      width: 24px;
+      height: 15px; }
+    .cart-button-wrp {
+      max-width: 360px;
+      align-self: center;
+      min-width: 360px; }
+    .cart-clear {
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: unset;
+      padding: 10px 30px 10px 30px; }
+    .cart-continue {
+      font-size: 12px;
+      line-height: 14px;
+      text-transform: unset;
+      padding: 10px 30px 10px 30px; }
+    .cart-form-wrp {
+      padding: 48px 0 0 0;
+      flex-direction: column; }
+    .cart-form {
+      max-width: none; }
+    .cart-calculator {
+      max-width: none;
+      margin: 48px 0 0 0; }
+
+  .registration-pg-registration-wrp {
+    padding: 40px 0 95px 0; }
+  .registration-pg-registration {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 9px 0 9px; }
+    .registration-pg-registration-form-wrp {
+      max-width: none; }
+    .registration-pg-registration-text {
+      font-size: 16px;
+      line-height: 19px;
+      margin: 40px 0 0 0; } }
 @media (max-width: 375px) {
   .category-box {
     max-width: 343px; }
