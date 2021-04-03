@@ -1,5 +1,7 @@
 @import "mixin.scss";
 
+/* ========== Начало блока page-nav [page-nav.scss] ========== */
+
 .page-nav {
     margin: 0 auto;
     max-width: 1600px;
@@ -11,7 +13,7 @@
         justify-content: space-between;
         margin: 0 auto;
         align-items: center;
-        padding: 60px 0;
+        padding: 60px 10px 60px 10px;
     }
 
     &__heading {
@@ -47,3 +49,37 @@
         }
     }
 }
+/* ========== Начало медиазапросов ========== */
+
+@media (max-width: 600px) {
+
+    .page-nav {
+    
+        &__wrp {
+            flex-direction: column;
+            padding: 24px 10px 46px 10px;
+        }
+    
+        &__heading {
+        }
+    
+        &__nav-list {
+            margin: 32px 0 0 0;
+        }
+    
+        &__nav-list-item {
+    
+            &--separate {
+    
+                &:after {
+                }
+            }
+    
+            &--text-modify {
+            }
+        }
+    }
+
+}
+
+/* ========== Конец блока page-nav [page-nav.scss] ========== */

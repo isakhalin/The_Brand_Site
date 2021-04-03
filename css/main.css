@@ -732,6 +732,7 @@ template {
   .footer__social-link:first-child {
     margin: 0 0 0 0; } }
 /* ========== Конец медиазапросов ========== */
+/* ========== Начало блока page-nav [page-nav.scss] ========== */
 .page-nav {
   margin: 0 auto;
   max-width: 1600px;
@@ -742,7 +743,7 @@ template {
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-    padding: 60px 0; }
+    padding: 60px 10px 60px 10px; }
   .page-nav__heading {
     font-family: lato;
     font-style: normal;
@@ -773,6 +774,14 @@ template {
       font-weight: 700;
       color: #F16D7F; }
 
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 600px) {
+  .page-nav__wrp {
+    flex-direction: column;
+    padding: 24px 10px 46px 10px; }
+  .page-nav__nav-list {
+    margin: 32px 0 0 0; } }
+/* ========== Конец блока page-nav [page-nav.scss] ========== */
 .add-to-cart-btn {
   font-family: lato;
   font-style: normal;
@@ -794,21 +803,6 @@ template {
   .add-to-cart-btn__cart-svg {
     margin: 0 25px 0 0; }
 
-@font-face {
-  font-family: 'lato';
-  src: url("../fonts/") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
-  font-family: 'lato';
-  src: url("../fonts/lato-light.woff2") format("woff2"), url("../fonts/lato-light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'lato';
-  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
 /* ========== Начало блока filter-options [filter-options.scss] ========== */
 .filter-options {
   font-family: lato;
@@ -906,12 +900,18 @@ template {
     background: #fff;
     position: absolute;
     top: 20px;
-    left: 244px;
+    left: 230px;
     z-index: 1; }
 
 @media (max-width: 600px) {
   .filter-options__labels {
     margin: 0 0 0 24px; } }
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 600px) {
+  .filter-options__size-form {
+    left: 135px; }
+  .filter-options__price-form {
+    left: 204px; } }
 /* ========== Конец блока filter-options [filter-options.scss] ========== */
 .index-main-heading {
   margin: 0 auto;
@@ -1091,7 +1091,7 @@ template {
   max-width: 1600px;
   margin: 0 auto;
   text-transform: uppercase;
-  padding: 50px 0 65px 0; }
+  padding: 50px 10px 65px 16px; }
   .catalog-filter-wrp {
     max-width: 1140px;
     margin: 0 auto; }
@@ -1101,8 +1101,7 @@ template {
     display: flex;
     justify-content: space-between; }
   .catalog-filter-menu {
-    position: relative;
-    margin: 0 0 0 16px; }
+    position: relative; }
   .catalog-filter-menu-checkbox {
     display: none; }
     .catalog-filter-menu-checkbox:checked ~ .catalog-filter-menu-box {
@@ -1238,7 +1237,9 @@ template {
     align-self: center;
     align-items: center; }
   .product-pg-carusel-product-img {
-    margin: 10px 0 40px 0; }
+    margin: 10px 0 40px 0;
+    width: 75%;
+    max-width: 597px; }
   .product-pg-carusel-button-forward {
     border: none;
     padding: 0;
@@ -1624,7 +1625,16 @@ template {
 
   .category {
     padding: 20px 6px 155px 6px;
-    justify-content: center; } }
+    justify-content: center; }
+
+  .product-pg-description-wrp {
+    top: 0; }
+
+  .product-pg-description-price {
+    max-width: 550px; }
+
+  .product-pg-product-wrp {
+    margin: 0 10px 30px 10px; } }
 @media (max-width: 900px) {
   .category-box {
     margin: 0 7px 14px 7px; }
@@ -1662,10 +1672,33 @@ template {
 
   .filter-options {
     font-size: 12px;
-    line-height: 14px; } }
+    line-height: 14px; }
+
+  .product-pg-carusel-product-img {
+    margin: 85px 0 85px 0; }
+
+  .product-pg-description-text {
+    max-width: 325px; }
+
+  .product-pg-description-price {
+    max-width: 175px; }
+    .product-pg-description-price--underline::after {
+      bottom: -32px; }
+
+  .product-pg-filter-options-wrp {
+    margin: 81px 0 0 0; }
+
+  .product-pg-products {
+    padding: 65px 0 35px 0; } }
 @media (max-width: 375px) {
   .category-box {
-    max-width: 343px; } }
+    max-width: 343px; }
+
+  .catalog-filter-menu-heading-span {
+    display: none; }
+
+  .product-pg-description-text {
+    margin: 32px 0 0 0; } }
 /* ========== Конец медиазапросов ========== */
 
 /*# sourceMappingURL=main.css.map */

@@ -224,7 +224,7 @@
     max-width: 1600px;
     margin: 0 auto;
     text-transform: uppercase;
-    padding: 50px 0 65px 0;
+    padding: 50px 10px 65px 16px;
 
     &-wrp {
         max-width: 1140px;
@@ -240,7 +240,7 @@
 
     &-menu {
         position: relative;
-        margin: 0 0 0 16px;
+        // margin: 0 0 0 16px;
     }
 
     &-menu-checkbox {
@@ -420,6 +420,8 @@
 
         &-product-img {
             margin: 10px 0 40px 0;
+            width: 75%;
+            max-width: 597px;
         }
 
         &-button-forward {
@@ -963,6 +965,17 @@
 
     }
     
+    .product-pg-description-wrp {
+        top: 0;
+    }
+
+    .product-pg-description-price {
+        max-width: 550px;
+    }
+
+    .product-pg-product-wrp {
+        margin: 0 10px 30px 10px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1032,6 +1045,30 @@
         font-size: 12px;
         line-height: 14px;
     }
+
+    .product-pg-carusel-product-img {
+        margin: 85px 0 85px 0;
+    }
+
+    .product-pg-description-text {
+        max-width: 325px;
+    }
+
+    .product-pg-description-price {
+        max-width: 175px;
+
+        &--underline::after {
+            bottom: -32px;
+        }
+    }
+
+    .product-pg-filter-options-wrp {
+        margin: 81px 0 0 0;
+    }
+
+    .product-pg-products {
+        padding: 65px 0 35px 0;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1043,7 +1080,13 @@
             // height: 236px;
         }
     }
+
+    .catalog-filter-menu-heading-span {
+        display: none;
+    }
+
+    .product-pg-description-text {
+        margin: 32px 0 0 0;
+    }
 }
 /* ========== Конец медиазапросов ========== */
-
-
