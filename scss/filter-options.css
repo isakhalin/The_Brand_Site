@@ -1,69 +1,113 @@
-/*
-Error: Undefined mixin 'fonts'.
-        on line 6 of C:\Users\Stepanov\Documents\GitHub\The_Brand_Site\scss\filter-options.scss, in `fonts'
-        from line 6 of C:\Users\Stepanov\Documents\GitHub\The_Brand_Site\scss\filter-options.scss
+@charset "UTF-8";
+/* ========== Начало блока filter-options [filter-options.scss] ========== */
+.filter-options {
+  font-family: lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 0 0 0;
+  display: flex;
+  position: relative;
+  color: #6F6E6E;
+  text-transform: uppercase; }
+  .filter-options__checkbox-trending {
+    display: none; }
+    .filter-options__checkbox-trending:checked ~ .filter-options__trending-form {
+      display: flex; }
+    .filter-options__checkbox-trending:checked ~ .filter-options__label-trending::after {
+      transform: rotate(-180deg); }
+  .filter-options__labels {
+    display: flex;
+    margin: 0 0 0 28px;
+    align-items: center; }
+  .filter-options__label-trending::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    margin: 0 0 0 10px;
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+    transition: 0.3s ease; }
+  .filter-options__trending-form {
+    display: none;
+    flex-direction: column;
+    padding: 7px 30px 5px 9px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: -13px;
+    z-index: 1; }
+  .filter-options__form-label-wrp {
+    margin: 0 0 6px 0;
+    display: flex; }
+  .filter-options__form-label {
+    margin: 0 0 0 9px; }
+  .filter-options__checkbox-size {
+    display: none; }
+    .filter-options__checkbox-size:checked ~ .filter-options__size-form {
+      display: flex; }
+    .filter-options__checkbox-size:checked ~ .filter-options__label-size::after {
+      transform: rotate(-180deg); }
+  .filter-options__size-form {
+    display: none;
+    flex-direction: column;
+    padding: 7px 30px 5px 9px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: 157px;
+    z-index: 1; }
+  .filter-options__label-size::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    margin: 0 0 0 10px;
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+    transition: 0.3s ease; }
+  .filter-options__checkbox-price {
+    display: none; }
+    .filter-options__checkbox-price:checked ~ .filter-options__price-form {
+      display: flex; }
+    .filter-options__checkbox-price:checked ~ .filter-options__label-price::after {
+      transform: rotate(-180deg); }
+  .filter-options__label-price::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 5px;
+    margin: 0 0 0 10px;
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+    transition: 0.3s ease; }
+  .filter-options__price-form {
+    display: none;
+    flex-direction: column;
+    padding: 7px 30px 5px 9px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 17px rgba(0, 0, 0, 0.21);
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: 230px;
+    z-index: 1; }
 
-1: @import "font.scss";
-2: 
-3: /* ========== Начало блока filter-options [filter-options.scss] ========== *\/
-4: 
-5: .filter-options {
-6:     @include fonts (400, 14px, 17px);
-7:     padding: 0 0 0 0;
-8:     display: flex;
-9:     position: relative;
-10:     color: #6F6E6E;
-11:     text-transform: uppercase;
+@media (max-width: 600px) {
+  .filter-options__labels {
+    margin: 0 0 0 24px; } }
+/* ========== Начало медиазапросов ========== */
+@media (max-width: 600px) {
+  .filter-options__size-form {
+    left: 135px; }
+  .filter-options__price-form {
+    left: 204px; } }
+/* ========== Конец блока filter-options [filter-options.scss] ========== */
 
-Backtrace:
-C:\Users\Stepanov\Documents\GitHub\The_Brand_Site\scss\filter-options.scss:6:in `fonts'
-C:\Users\Stepanov\Documents\GitHub\The_Brand_Site\scss\filter-options.scss:6
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'fonts'.\A         on line 6 of C:\Users\Stepanov\Documents\GitHub\The_Brand_Site\scss\filter-options.scss, in `fonts'\A         from line 6 of C:\Users\Stepanov\Documents\GitHub\The_Brand_Site\scss\filter-options.scss\A \A 1: @import \"font.scss\";\A 2: \A 3: /* ========== Начало блока filter-options [filter-options.scss] ========== */\A 4: \A 5: .filter-options {\A 6:     @include fonts (400, 14px, 17px);\A 7:     padding: 0 0 0 0;\A 8:     display: flex;\A 9:     position: relative;\A 10:     color: #6F6E6E;\A 11:     text-transform: uppercase;"; }
+/*# sourceMappingURL=filter-options.css.map */
